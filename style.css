@@ -1,0 +1,205 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+}
+
+/* Header Section */
+.site-header {
+    background-color: #A31F34;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.header-logo img {
+    height: 50px;
+    width: auto;
+}
+
+.header-logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.search-container .search-icon {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Main Content Layout */
+.homepage-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Left: 1fr, Right: 2fr */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* Left Section */
+.homepage-left {
+    background-color: #f4f4f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.search-bar {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    background-color: #A31F34;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search-bar button:hover {
+    background-color: #7d1528;
+}
+
+/* Right Section */
+.homepage-right {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+}
+
+.updates {
+    margin-bottom: 2rem;
+}
+
+.main-pic img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.main-pic p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Spotlight Section */
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.spotlight-grid article {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight-grid img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.spotlight-grid h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.spotlight-grid p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.spotlight-grid a {
+    color: #A31F34;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.spotlight-grid a:hover {
+    text-decoration: underline;
+}
+
+/* New "Want more about MIT" Section */
+.more-info {
+    background-color: #A31F34;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.more-info p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer in Left Section */
+.left-footer {
+    background-color: #f4f4f9;
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+.left-footer .site-footer__utility {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.left-footer .site-footer__utility a {
+    color: #A31F34;
+    text-decoration: none;
+}
+
+.left-footer .site-footer__utility a:hover {
+    text-decoration: underline;
+}
